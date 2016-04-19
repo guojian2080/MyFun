@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mhr-cF-kf4">
+                                <rect key="frame" x="0.0" y="270" width="375" height="128"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="4" translatesAutoresizingMaskIntoConstraints="NO" id="PV7-61-SAc">
+                                        <rect key="frame" x="18" y="84" width="339" height="31"/>
+                                        <connections>
+                                            <action selector="fontSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="ElM-Jw-CcY"/>
+                                        </connections>
+                                    </slider>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWO-XR-Rof">
+                                        <rect key="frame" x="108" y="8" width="80" height="68"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                        </accessibility>
+                                        <state key="normal" image="正文字号-中（默认）"/>
+                                        <state key="selected" image="正文字号-中"/>
+                                        <connections>
+                                            <action selector="buttonView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mWE-gf-v7J"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rA3-jq-Ots">
+                                        <rect key="frame" x="20" y="8" width="80" height="68"/>
+                                        <state key="normal" image="正文字号-小（默认）"/>
+                                        <connections>
+                                            <action selector="buttonView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="I2K-AQ-pKo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVA-a0-lNY">
+                                        <rect key="frame" x="284" y="8" width="80" height="68"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                        </accessibility>
+                                        <state key="normal" image="正文字号-大+（默认）"/>
+                                        <connections>
+                                            <action selector="buttonView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kjb-jZ-yQH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJ8-J0-u6v">
+                                        <rect key="frame" x="196" y="8" width="80" height="68"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" button="YES" selected="YES"/>
+                                        </accessibility>
+                                        <state key="normal" image="正文字号-大（默认）"/>
+                                        <connections>
+                                            <action selector="buttonView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fK5-lT-jGz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12291236649999999" green="0.61586349740000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="演示文字" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G0k-yw-a35">
+                                <rect key="frame" x="50" y="212" width="275" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="bigButton" destination="VJ8-J0-u6v" id="vpN-3g-1Bn"/>
+                        <outlet property="fontValue" destination="PV7-61-SAc" id="yaF-dq-X0J"/>
+                        <outlet property="middleButton" destination="xWO-XR-Rof" id="Tq3-gS-uFx"/>
+                        <outlet property="plusButton" destination="FVA-a0-lNY" id="qt5-GZ-yvp"/>
+                        <outlet property="smallButton" destination="rA3-jq-Ots" id="iid-OO-toy"/>
+                        <outlet property="textLabel" destination="G0k-yw-a35" id="hfg-sr-kFK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="339.5" y="353.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="正文字号-中" width="80" height="68"/>
+        <image name="正文字号-中（默认）" width="80" height="68"/>
+        <image name="正文字号-大+（默认）" width="80" height="68"/>
+        <image name="正文字号-大（默认）" width="80" height="68"/>
+        <image name="正文字号-小（默认）" width="80" height="68"/>
+    </resources>
+</document>
