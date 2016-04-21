@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB2D5A631CC93DD300D48755 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2D5A621CC93DD300D48755 /* UIImage+Extension.m */; };
 		FB3FDFB61CC7AE8000D76F45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3FDFB51CC7AE8000D76F45 /* main.m */; };
 		FB3FDFB91CC7AE8000D76F45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3FDFB81CC7AE8000D76F45 /* AppDelegate.m */; };
 		FB3FDFBC1CC7AE8000D76F45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB3FDFBB1CC7AE8000D76F45 /* ViewController.m */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB2D5A611CC93DD300D48755 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		FB2D5A621CC93DD300D48755 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		FB3FDFB11CC7AE8000D76F45 /* GJEx04.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GJEx04.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3FDFB51CC7AE8000D76F45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FB3FDFB71CC7AE8000D76F45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 			children = (
 				FB3FDFB71CC7AE8000D76F45 /* AppDelegate.h */,
 				FB3FDFB81CC7AE8000D76F45 /* AppDelegate.m */,
+				FB2D5A611CC93DD300D48755 /* UIImage+Extension.h */,
+				FB2D5A621CC93DD300D48755 /* UIImage+Extension.m */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				FB3FDFCF1CC7BC0A00D76F45 /* GJData.m in Sources */,
 				FB3FDFDC1CC7E76600D76F45 /* GJDataGroup.m in Sources */,
 				FB3FDFB61CC7AE8000D76F45 /* main.m in Sources */,
+				FB2D5A631CC93DD300D48755 /* UIImage+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +374,7 @@
 				FB3FDFCA1CC7AE8000D76F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -8,7 +8,7 @@
 
 #import "GJDataGroupHeaderView.h"
 #import "GJDataGroup.h"
-
+#import "UIImage+Extension.h"
 @interface GJDataGroupHeaderView ()
 
 @property (nonatomic, weak) UIButton *nameView;
@@ -42,7 +42,7 @@
         
         nameView.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
 //        nameView.image.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
-//        nameView.contentEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
+        nameView.contentEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
         nameView.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
         
         //设置按钮缩放
@@ -72,7 +72,7 @@
 
 //    UIImage *image = [UIImage imageNamed:dataGroup.imageName];
 //    CGRect *rect = CGRectMake(0, 0, 60, 60);
-    [self.nameView setImage:[UIImage imageNamed:dataGroup.imageName] forState:UIControlStateNormal];
+    [self.nameView setImage:[UIImage resizeImage:dataGroup.imageName toSize:CGSizeMake(60, 60)] forState:UIControlStateNormal];
 //    self.nameView.imageView.transform = CGAffineTransformMakeScale(0.1, 0.1);
 //    [self.nameView imageRectForContentRect:CGRectMake(0, 0, 60, 60)];
     [self.nameView setTitle:dataGroup.titileName forState:UIControlStateNormal];
