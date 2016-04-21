@@ -38,15 +38,43 @@
         [self.contentView addSubview:nameView];
         self.nameView = nameView;
         
-        NSLog(@"%@", self.dataGroup.imageName);
-        [nameView setImage:[UIImage imageNamed:self.dataGroup.imageName] forState:UIControlStateNormal];
+        [nameView setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        
+        nameView.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+//        nameView.image.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+//        nameView.contentEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
+        nameView.titleEdgeInsets = UIEdgeInsetsMake(0, 20, 0, 0);
+        
+        //设置按钮缩放
+        nameView.imageView.contentMode = UIViewContentModeScaleAspectFit;
+        
+//        NSLog(@"%@", self.dataGroup.imageName);
+//        [nameView setImage:[UIImage imageNamed:self.dataGroup.imageName] forState:UIControlStateNormal];
     }
     return self;
+}
+
+- (void) layoutSubviews
+{
+    [super layoutSubviews];
+    self.nameView.frame = self.bounds;
+    
+//    NSLog(@"%f",self.nameView.imageView.frame.size.width);
+    
+//    CGFloat countX = self.bounds.size.width - 10 - 150;
+//    self.nameView.imageView.frame = CGRectMake(20, 0, 60, 60);
+    
 }
 
 - (void) setDataGroup:(GJDataGroup *)dataGroup
 {
     _dataGroup = dataGroup;
+
+//    UIImage *image = [UIImage imageNamed:dataGroup.imageName];
+//    CGRect *rect = CGRectMake(0, 0, 60, 60);
+    [self.nameView setImage:[UIImage imageNamed:dataGroup.imageName] forState:UIControlStateNormal];
+//    self.nameView.imageView.transform = CGAffineTransformMakeScale(0.1, 0.1);
+//    [self.nameView imageRectForContentRect:CGRectMake(0, 0, 60, 60)];
     [self.nameView setTitle:dataGroup.titileName forState:UIControlStateNormal];
 }
 

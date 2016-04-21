@@ -24,21 +24,17 @@
 
 + (NSArray *) dataGroupList
 {
-    {
-        NSString *path = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"plist"];
-        NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
-        
-        NSLog(@"dataList:%ld",dictArray.count);
-        
-        //字典转模型
-        NSMutableArray *tmpArray = [NSMutableArray array];
-        for (NSDictionary *dict in dictArray) {
-            GJDataGroup *data = [GJDataGroup dataGroupWithDict:dict];
-            [tmpArray addObject:data];
-        }
-        
-        return tmpArray;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"plist"];
+    NSArray *dictArray = [NSArray arrayWithContentsOfFile:path];
+    
+    //字典转模型
+    NSMutableArray *tmpArray = [NSMutableArray array];
+    for (NSDictionary *dict in dictArray) {
+        GJDataGroup *data = [GJDataGroup dataGroupWithDict:dict];
+        [tmpArray addObject:data];
     }
+    
+    return tmpArray;
 }
 
 @end
