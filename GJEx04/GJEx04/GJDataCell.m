@@ -31,8 +31,7 @@
     CGFloat imageW = image.size.width;
     CGFloat imageH = image.size.height;
     CGRect rect = CGRectMake(0, 0, imageW,imageH);
-    self.imageView.frame = rect
-    ;
+    self.imageView.frame = rect;
     self.imageView.contentMode = UIViewContentModeScaleToFill;
 }
 
