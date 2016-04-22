@@ -8,6 +8,7 @@
 
 #import "GJDataCell.h"
 #import "GJData.h"
+#import "UIImage+Extension.h"
 @implementation GJDataCell
 
 + (instancetype) dataCellWithTableView:(UITableView *)tableView
@@ -24,7 +25,15 @@
 {
     _data = data;
     self.textLabel.text = @"itcast";
-    self.imageView.image = [UIImage imageNamed:@"泡妞宝典"];
+    UIImage *image = [UIImage resizeImage:@"泡妞宝典" toSize:CGSizeMake(100, 100)];
+//    self.imageView.image = [UIImage imageNamed:@"泡妞宝典"];
+    [self.imageView setImage:image];
+    CGFloat imageW = image.size.width;
+    CGFloat imageH = image.size.height;
+    CGRect rect = CGRectMake(0, 0, imageW,imageH);
+    self.imageView.frame = rect
+    ;
+    self.imageView.contentMode = UIViewContentModeScaleToFill;
 }
 
 - (void)awakeFromNib {

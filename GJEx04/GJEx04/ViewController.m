@@ -11,7 +11,7 @@
 #import "GJDataCell.h"
 #import "GJDataGroup.h"
 #import "GJDataGroupHeaderView.h"
-@interface ViewController ()
+@interface ViewController () <GJDataGroupHeaderViewDelegate>
 
 @property (nonatomic, strong) NSArray *dataGroupList;
 @end
@@ -35,6 +35,9 @@
     
     //3、设置组头高度
     self.tableView.sectionHeaderHeight = 60;
+    
+    //4、设置行高
+//    self.tableView.rowHeight = 60;
 }
 
 #pragma mark - 数据源方法
@@ -45,7 +48,8 @@
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 1;
+    GJDataGroup *dataGroup = self.dataGroupList[section];
+    return dataGroup.isExpand ? 1 : 0;
 }
 
 - (UITableViewCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -60,19 +64,28 @@
     return cell;
 }
 
-#pragma mark - 代理方法
+#pragma mark - tableView代理方法
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
 {
     GJDataGroupHeaderView *headerView = [GJDataGroupHeaderView headerViewWithTableView:tableView];
     
     GJDataGroup *dataGroup = self.dataGroupList[section];
 
+    headerView.delegate = self;
+    
     headerView.dataGroup = dataGroup;
 
     headerView.tag = section;
     
     return headerView;
     
+}
+
+#pragma mark - headerView代理方法
+- (void)headerViewDidClickedNameBtn:(GJDataGroupHeaderView *)headerView
+{
+    NSIndexSet *indexSet = [NSIndexSet indexSetWithIndex:headerView.tag];
+    [self.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationNone];
 }
 
 - (void)didReceiveMemoryWarning {

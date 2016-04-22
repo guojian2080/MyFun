@@ -39,6 +39,7 @@
         self.nameView = nameView;
         
         [nameView setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [nameView setBackgroundColor:[UIColor whiteColor]];
         
         nameView.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
 //        nameView.image.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
@@ -48,10 +49,21 @@
         //设置按钮缩放
         nameView.imageView.contentMode = UIViewContentModeScaleAspectFit;
         
+        //给按钮注册事件
+        [nameView addTarget:self action:@selector(nameClick) forControlEvents:UIControlEventTouchUpInside];
+        
 //        NSLog(@"%@", self.dataGroup.imageName);
 //        [nameView setImage:[UIImage imageNamed:self.dataGroup.imageName] forState:UIControlStateNormal];
     }
     return self;
+}
+- (void) nameClick
+{
+    self.dataGroup.expand = !self.dataGroup.isExpand;
+    
+    if ([self.delegate respondsToSelector:@selector(headerViewDidClickedNameBtn:)]) {
+        [self.delegate headerViewDidClickedNameBtn:self];
+    }
 }
 
 - (void) layoutSubviews

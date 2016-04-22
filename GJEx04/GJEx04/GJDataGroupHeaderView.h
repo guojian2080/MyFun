@@ -7,10 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-@class GJDataGroup;
+@class GJDataGroup,GJDataGroupHeaderView;
+@protocol GJDataGroupHeaderViewDelegate <NSObject>
+
+@optional
+//1、定义代理协议
+- (void) headerViewDidClickedNameBtn:(GJDataGroupHeaderView *)headerView;
+
+@end
+
 @interface GJDataGroupHeaderView : UITableViewHeaderFooterView
 
 @property (nonatomic, strong) GJDataGroup *dataGroup;
+//2、定义代理属性
+@property (nonatomic, weak) id <GJDataGroupHeaderViewDelegate> delegate;
 
 + (instancetype) headerViewWithTableView:(UITableView *)tableView;
 

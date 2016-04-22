@@ -12,6 +12,8 @@
 
 @property (nonatomic, copy) NSString *titileName;
 @property (nonatomic, copy) NSString *imageName;
+//记录展开还是合并 默认NO 合并
+@property (nonatomic, assign, getter=isExpand) BOOL expand;
 
 - (instancetype) initWithDict:(NSDictionary *)dict;
 + (instancetype) dataGroupWithDict:(NSDictionary *)dict;
