@@ -33,6 +33,18 @@
                                         <rect key="frame" x="0.0" y="99" width="2832" height="568"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="520_userguid_person_taitou_1" id="S44-Lr-xht">
+                                        <rect key="frame" x="0.0" y="419" width="200" height="200"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="520_userguid_sun" id="6hV-Tn-QCC">
+                                        <rect key="frame" x="255" y="0.0" width="120" height="120"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="520_userguid_words_5" id="1Jc-yK-joL">
+                                        <rect key="frame" x="27" y="155" width="320" height="125"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -40,7 +52,10 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="imageView" destination="S44-Lr-xht" id="lKg-6c-XyG"/>
                         <outlet property="scrollView" destination="bpe-OM-CGd" id="bAW-dO-ep3"/>
+                        <outlet property="sunView" destination="6hV-Tn-QCC" id="MSU-sA-Nlo"/>
+                        <outlet property="wordView" destination="1Jc-yK-joL" id="c75-Ca-k2A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -53,5 +68,8 @@
         <image name="520_userguid_cg" width="2832" height="568"/>
         <image name="520_userguid_cloud" width="2832" height="54"/>
         <image name="520_userguid_fg" width="2832" height="568"/>
+        <image name="520_userguid_person_taitou_1" width="380" height="362"/>
+        <image name="520_userguid_sun" width="250" height="250"/>
+        <image name="520_userguid_words_5" width="640" height="250"/>
     </resources>
 </document>
