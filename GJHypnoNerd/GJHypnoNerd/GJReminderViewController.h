@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-//@interface GJReminderViewController : NSObject
+
 @interface GJReminderViewController : UIViewController
 
 @end

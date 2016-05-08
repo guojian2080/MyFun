@@ -10,20 +10,15 @@
 
 @interface GJHypnosisView ()
 
-@property (nonatomic, strong) UIColor *circleColor;
+
 
 @end
 
 @implementation GJHypnosisView
-//void CGContextSetShadow(
-//    CGContextRef context,
-//    CGSize offset,
-//    CGFloat blur
-//);
+
 - (id)initWithFrame:(CGRect)frame
 {
     if (self = [super initWithFrame:frame]) {
-//        self.frame = frame;
         self.backgroundColor = [UIColor clearColor];
         self.circleColor = [UIColor lightGrayColor];
     }
@@ -43,7 +38,6 @@
     center.x = bounds.origin.x + bounds.size.width / 2.0;
     center.y = bounds.origin.y + bounds.size.height / 2.0;
     
-//    float radius = (MIN(bounds.size.width, bounds.size.height) / 2.0);
     float maxRadius = hypot(bounds.size.width, bounds.size.height);
     
     UIBezierPath *path = [[UIBezierPath alloc] init];
@@ -53,16 +47,13 @@
     }
     
     path.lineWidth = 10;
-//    [[UIColor lightGrayColor] setStroke];
+
     [self.circleColor setStroke];
     [path stroke];
     
     UIImage *logoImage = [UIImage imageNamed:@"logo"];
     [logoImage drawInRect:bounds];
     
-//    CGContextRef currentContext = UIGraphicsGetCurrentContext();
-//    CGContextSetShadow(currentContext, CGSizeMake(4, 7), 3);
-//    CGContextRestoreGState(currentContext);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event

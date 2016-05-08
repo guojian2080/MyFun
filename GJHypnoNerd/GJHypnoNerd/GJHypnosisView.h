@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface GJHypnosisView : UIView
-//@property (nonatomic) CGRect frame;
+
+@property (nonatomic, strong) UIColor *circleColor;
 
 @end

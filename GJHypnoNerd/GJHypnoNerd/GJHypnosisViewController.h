@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-//@interface GJHypnosisViewController : NSObject
+
 @interface GJHypnosisViewController : UIViewController
 
 @end
