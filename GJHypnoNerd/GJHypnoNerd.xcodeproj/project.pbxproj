@@ -1,0 +1,308 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB32960F1CDF9262007EEE08 /* GJQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB32960D1CDF9262007EEE08 /* GJQuizViewController.m */; };
+		FB3296101CDF9262007EEE08 /* GJQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB32960E1CDF9262007EEE08 /* GJQuizViewController.xib */; };
+		FBDD223F1CDBA796003399EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDD223E1CDBA796003399EC /* main.m */; };
+		FBDD22421CDBA796003399EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDD22411CDBA796003399EC /* AppDelegate.m */; };
+		FBDD224A1CDBA796003399EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBDD22491CDBA796003399EC /* Assets.xcassets */; };
+		FBDD22561CDBA804003399EC /* GJHypnosisView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDD22551CDBA804003399EC /* GJHypnosisView.m */; };
+		FBDD22591CDBA858003399EC /* GJHypnosisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDD22581CDBA858003399EC /* GJHypnosisViewController.m */; };
+		FBDD225C1CDBABB2003399EC /* GJReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBDD225B1CDBABB2003399EC /* GJReminderViewController.m */; };
+		FBDD225E1CDBADA2003399EC /* GJReminderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBDD225D1CDBADA2003399EC /* GJReminderViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB32960C1CDF9262007EEE08 /* GJQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJQuizViewController.h; sourceTree = "<group>"; };
+		FB32960D1CDF9262007EEE08 /* GJQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJQuizViewController.m; sourceTree = "<group>"; };
+		FB32960E1CDF9262007EEE08 /* GJQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJQuizViewController.xib; sourceTree = "<group>"; };
+		FBDD223A1CDBA795003399EC /* GJHypnoNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GJHypnoNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBDD223E1CDBA796003399EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBDD22401CDBA796003399EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBDD22411CDBA796003399EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBDD22491CDBA796003399EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBDD224E1CDBA796003399EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBDD22541CDBA804003399EC /* GJHypnosisView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJHypnosisView.h; sourceTree = "<group>"; };
+		FBDD22551CDBA804003399EC /* GJHypnosisView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJHypnosisView.m; sourceTree = "<group>"; };
+		FBDD22571CDBA858003399EC /* GJHypnosisViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJHypnosisViewController.h; sourceTree = "<group>"; };
+		FBDD22581CDBA858003399EC /* GJHypnosisViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJHypnosisViewController.m; sourceTree = "<group>"; };
+		FBDD225A1CDBABB2003399EC /* GJReminderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJReminderViewController.h; sourceTree = "<group>"; };
+		FBDD225B1CDBABB2003399EC /* GJReminderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJReminderViewController.m; sourceTree = "<group>"; };
+		FBDD225D1CDBADA2003399EC /* GJReminderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJReminderViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBDD22371CDBA795003399EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBDD22311CDBA795003399EC = {
+			isa = PBXGroup;
+			children = (
+				FBDD223C1CDBA796003399EC /* GJHypnoNerd */,
+				FBDD223B1CDBA795003399EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBDD223B1CDBA795003399EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBDD223A1CDBA795003399EC /* GJHypnoNerd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBDD223C1CDBA796003399EC /* GJHypnoNerd */ = {
+			isa = PBXGroup;
+			children = (
+				FBDD22401CDBA796003399EC /* AppDelegate.h */,
+				FBDD22411CDBA796003399EC /* AppDelegate.m */,
+				FBDD22541CDBA804003399EC /* GJHypnosisView.h */,
+				FBDD22551CDBA804003399EC /* GJHypnosisView.m */,
+				FBDD22571CDBA858003399EC /* GJHypnosisViewController.h */,
+				FBDD22581CDBA858003399EC /* GJHypnosisViewController.m */,
+				FBDD225A1CDBABB2003399EC /* GJReminderViewController.h */,
+				FBDD225B1CDBABB2003399EC /* GJReminderViewController.m */,
+				FBDD225D1CDBADA2003399EC /* GJReminderViewController.xib */,
+				FB32960C1CDF9262007EEE08 /* GJQuizViewController.h */,
+				FB32960D1CDF9262007EEE08 /* GJQuizViewController.m */,
+				FB32960E1CDF9262007EEE08 /* GJQuizViewController.xib */,
+				FBDD22491CDBA796003399EC /* Assets.xcassets */,
+				FBDD224E1CDBA796003399EC /* Info.plist */,
+				FBDD223D1CDBA796003399EC /* Supporting Files */,
+			);
+			path = GJHypnoNerd;
+			sourceTree = "<group>";
+		};
+		FBDD223D1CDBA796003399EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBDD223E1CDBA796003399EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBDD22391CDBA795003399EC /* GJHypnoNerd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBDD22511CDBA796003399EC /* Build configuration list for PBXNativeTarget "GJHypnoNerd" */;
+			buildPhases = (
+				FBDD22361CDBA795003399EC /* Sources */,
+				FBDD22371CDBA795003399EC /* Frameworks */,
+				FBDD22381CDBA795003399EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GJHypnoNerd;
+			productName = GJHypnoNerd;
+			productReference = FBDD223A1CDBA795003399EC /* GJHypnoNerd.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBDD22321CDBA795003399EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = gj;
+				TargetAttributes = {
+					FBDD22391CDBA795003399EC = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 74LUC972NK;
+					};
+				};
+			};
+			buildConfigurationList = FBDD22351CDBA795003399EC /* Build configuration list for PBXProject "GJHypnoNerd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBDD22311CDBA795003399EC;
+			productRefGroup = FBDD223B1CDBA795003399EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBDD22391CDBA795003399EC /* GJHypnoNerd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBDD22381CDBA795003399EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDD224A1CDBA796003399EC /* Assets.xcassets in Resources */,
+				FBDD225E1CDBADA2003399EC /* GJReminderViewController.xib in Resources */,
+				FB3296101CDF9262007EEE08 /* GJQuizViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBDD22361CDBA795003399EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBDD22561CDBA804003399EC /* GJHypnosisView.m in Sources */,
+				FBDD22421CDBA796003399EC /* AppDelegate.m in Sources */,
+				FBDD225C1CDBABB2003399EC /* GJReminderViewController.m in Sources */,
+				FBDD22591CDBA858003399EC /* GJHypnosisViewController.m in Sources */,
+				FB32960F1CDF9262007EEE08 /* GJQuizViewController.m in Sources */,
+				FBDD223F1CDBA796003399EC /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FBDD224F1CDBA796003399EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBDD22501CDBA796003399EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBDD22521CDBA796003399EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GJHypnoNerd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gj.GJHypnoNerd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FBDD22531CDBA796003399EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GJHypnoNerd/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gj.GJHypnoNerd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBDD22351CDBA795003399EC /* Build configuration list for PBXProject "GJHypnoNerd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDD224F1CDBA796003399EC /* Debug */,
+				FBDD22501CDBA796003399EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBDD22511CDBA796003399EC /* Build configuration list for PBXNativeTarget "GJHypnoNerd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBDD22521CDBA796003399EC /* Debug */,
+				FBDD22531CDBA796003399EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBDD22321CDBA795003399EC /* Project object */;
+}
