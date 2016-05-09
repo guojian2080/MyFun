@@ -8,12 +8,13 @@
 
 #import "AppDelegate.h"
 #import "GJHypnosisView.h"
-@interface AppDelegate ()
+@interface AppDelegate () <UIScrollViewDelegate>
+
+@property (nonatomic, strong) GJHypnosisView *hypnosisView;
 
 @end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
@@ -22,18 +23,24 @@
     CGRect screenRect = self.window.bounds;
     CGRect bigRect = screenRect;
     bigRect.size.width *= 2.0;
+    bigRect.size.height *= 2.0;
     
     UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:screenRect];
-    scrollView.pagingEnabled = YES;
+    scrollView.delegate = self;
+    scrollView.pagingEnabled = NO;
+    scrollView.minimumZoomScale = 0.5;
+    scrollView.maximumZoomScale = 2.0;
+    
     [self.window addSubview:scrollView];
     
     GJHypnosisView *hypnosisView = [[GJHypnosisView alloc] initWithFrame:screenRect];
     [scrollView addSubview:hypnosisView];
     
-    screenRect.origin.x += screenRect.size.width;
+    self.hypnosisView = hypnosisView;
+//    screenRect.origin.x += screenRect.size.width;
     
-    GJHypnosisView *anotherView = [[GJHypnosisView alloc] initWithFrame:screenRect];
-    [scrollView addSubview:anotherView];
+//    GJHypnosisView *anotherView = [[GJHypnosisView alloc] initWithFrame:screenRect];
+//    [scrollView addSubview:anotherView];
     
     scrollView.contentSize = bigRect.size;
     
@@ -62,6 +69,12 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - scrollView的代理方法
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView
+{
+    return self.hypnosisView;
 }
 
 @end
