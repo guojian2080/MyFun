@@ -18,6 +18,7 @@
 
 @implementation GJItemsViewController
 
+//懒加载
 - (NSArray *) items
 {
     if (!_items) {
@@ -58,40 +59,69 @@
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    NSMutableArray *tmpItems = [NSMutableArray array];
-    NSMutableArray *tmpItems2 = [NSMutableArray array];
-    for (GJItem *item in self.items) {
-        if (item.valueInDollars > 50) {
-            [tmpItems addObject:item];
-        }else{
-            [tmpItems2 addObject:item];
-        }
-    }
+//    v1
+//    NSMutableArray *tmpItems = [NSMutableArray array];
+//    NSMutableArray *tmpItems2 = [NSMutableArray array];
+//    for (GJItem *item in self.items) {
+//        predicate = [NSPredicate predicateWithFormat:@"item.valueInDollars > 50"];
+//        if (item.valueInDollars > 50) {
+//            [tmpItems addObject:item];
+//        }else{
+//            [tmpItems2 addObject:item];
+//        }
+//    }
+//    if (section == 0) {
+//        return [tmpItems count];
+//    } else {
+//        return [tmpItems2 count];
+//    }
+
+    //v2
+    //使用过滤器进行数组过滤
+    NSPredicate *predicate;
     if (section == 0) {
-        return [tmpItems count];
-    } else {
-        return [tmpItems2 count];
+        predicate = [NSPredicate predicateWithFormat:@"valueInDollars > 50"];
+    }else{
+        predicate = [NSPredicate predicateWithFormat:@"valueInDollars <= 50"];
     }
+    
+    NSArray *tmpArray;
+    tmpArray = [self.items filteredArrayUsingPredicate:predicate];
+    return tmpArray.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 //    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
-    NSMutableArray *tmpItems = [NSMutableArray array];
-    NSMutableArray *tmpItems2 = [NSMutableArray array];
-    for (GJItem *item in self.items) {
-        if (item.valueInDollars > 50) {
-            [tmpItems addObject:item];
-        }else{
-            [tmpItems2 addObject:item];
-        }
-    }
+//    v1
+//    NSMutableArray *tmpItems = [NSMutableArray array];
+//    NSMutableArray *tmpItems2 = [NSMutableArray array];
+//    for (GJItem *item in self.items) {
+//        if (item.valueInDollars > 50) {
+//            [tmpItems addObject:item];
+//        }else{
+//            [tmpItems2 addObject:item];
+//        }
+//    }
+//    if (indexPath.section == 0) {
+//        cell.textLabel.text = [tmpItems[indexPath.row] description];
+//    } else {
+//        cell.textLabel.text = [tmpItems2[indexPath.row] description];
+//    }
+    
+    //v2
+    //使用过滤器进行数组过滤
+    NSPredicate *predicate;
     if (indexPath.section == 0) {
-        cell.textLabel.text = [tmpItems[indexPath.row] description];
-    } else {
-        cell.textLabel.text = [tmpItems2[indexPath.row] description];
+        predicate = [NSPredicate predicateWithFormat:@"valueInDollars > 50"];
+    }else{
+        predicate = [NSPredicate predicateWithFormat:@"valueInDollars <= 50"];
     }
+    
+    NSArray *tmpArray;
+    tmpArray = [self.items filteredArrayUsingPredicate:predicate];
+    cell.textLabel.text = [tmpArray[indexPath.row] description];
     
 //    NSArray *items = [[GJItemStore sharedStore] allItems];
 //    GJItem *item = items[indexPath.row];
