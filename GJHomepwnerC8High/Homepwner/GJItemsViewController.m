@@ -58,6 +58,7 @@
     return cell;
 }
 
+#pragma mark - tableView delegate 方法
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSArray *items = [[GJItemStore sharedStore] allItems];

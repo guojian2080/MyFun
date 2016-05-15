@@ -39,26 +39,6 @@
     [self presentViewController:imagePicker animated:YES completion:nil];
 }
 
-- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary<NSString *,id> *)editingInfo
-{    
-    [[GJImageStore sharedStore] setImage:image forKey:self.item.itemKey];
-    
-    self.imageView.image = image;
-    
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-
-//- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
-//{
-//    UIImage *image = info[UIImagePickerControllerOriginalImage];
-//    
-//    [[GJImageStore sharedStore] setImage:image forKey:self.item.itemKey];
-//    
-//    self.imageView.image = image;
-//    
-//    [self dismissViewControllerAnimated:YES completion:nil];
-//}
-
 - (void) setItem:(GJItem *)item
 {
     _item = item;
@@ -98,11 +78,20 @@
     item.serialNumber = self.serialNumberField.text;
     item.valueInDollars = [self.valueField.text intValue];
 }
-
+#pragma mark -m textField delegate方法
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     [textField resignFirstResponder];
     return YES;
+}
+#pragma mark - imagePicker delegate方法
+- (void) imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(NSDictionary<NSString *,id> *)editingInfo
+{
+    [[GJImageStore sharedStore] setImage:image forKey:self.item.itemKey];
+    
+    self.imageView.image = image;
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

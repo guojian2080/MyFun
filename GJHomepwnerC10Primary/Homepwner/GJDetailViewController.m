@@ -8,7 +8,7 @@
 
 #import "GJDetailViewController.h"
 #import "GJItem.h"
-@interface GJDetailViewController ()
+@interface GJDetailViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *serialNumberField;
 @property (weak, nonatomic) IBOutlet UITextField *valueField;
@@ -32,6 +32,7 @@
     self.nameField.text = item.itemName;
     self.serialNumberField.text = item.serialNumber;
     self.valueField.text = [NSString stringWithFormat:@"%d",item.valueInDollars];
+    self.valueField.tag = 3;
     
     static NSDateFormatter *dateFormatter = nil;
     if(!dateFormatter){
@@ -52,6 +53,15 @@
     item.itemName = self.nameField.text;
     item.serialNumber = self.serialNumberField.text;
     item.valueInDollars = [self.valueField.text intValue];
+}
+
+#pragma mark - textField 代理方法
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    if (textField.tag == 3) {
+        textField.keyboardType = UIKeyboardTypeNumberPad;
+    }
+    
 }
 
 @end

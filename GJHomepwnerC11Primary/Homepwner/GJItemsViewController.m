@@ -83,6 +83,13 @@
     [self.tableView setTableHeaderView:header];
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.tableView reloadData];
+}
+
+#pragma mark - tableView delegate方法
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     GJDetailViewController *detailViewController = [[GJDetailViewController alloc] init];
@@ -92,12 +99,6 @@
     detailViewController.item = selectedItem;
     
     [self.navigationController pushViewController:detailViewController animated:YES];
-}
-
-- (void) viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    [self.tableView reloadData];
 }
 
 #pragma mark - dataSource方法

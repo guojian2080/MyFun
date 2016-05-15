@@ -9,15 +9,34 @@
 #import "GJItemsViewController.h"
 #import "GJItemStore.h"
 #import "GJItem.h"
+
+@interface GJItemsViewController ()
+
+@property (nonatomic, strong) NSArray *items;
+
+@end
+
 @implementation GJItemsViewController
+
+- (NSArray *) items
+{
+    if (!_items) {
+        for (int i = 0; i < 5; i++) {
+            [[GJItemStore sharedStore] createItem];
+        }
+        _items = [[GJItemStore sharedStore] allItems];
+    }
+
+    return _items;
+}
 
 - (instancetype) init
 {
     self = [super initWithStyle:UITableViewStylePlain];
     if (self) {
-        for (int i = 0; i < 5; i++) {
-            [[GJItemStore sharedStore] createItem];
-        }
+        //        for (int i = 0; i < 5; i++) {
+        //            [[GJItemStore sharedStore] createItem];
+        //        }
     }
     return  self;
 }
@@ -37,17 +56,24 @@
 #pragma mark - dataSource方法
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [[[GJItemStore sharedStore] allItems] count] + 1;
+//    return [[[GJItemStore sharedStore] allItems] count];
+    return self.items.count + 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
 //    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"UITableViewCell"];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"UITableViewCell" forIndexPath:indexPath];
-    NSArray *items = [[GJItemStore sharedStore] allItems];
-    if (indexPath.row < [items count]) {
-        GJItem *item = items[indexPath.row];
-        cell.textLabel.text = [item description];
+//    NSArray *items = [[GJItemStore sharedStore] allItems];
+//    NSMutableArray *tmpItems = [NSMutableArray array];
+//    for (GJItem *item in items) {
+//        [tmpItems addObject:item];
+//    }
+//    GJItem *item = [[GJItem alloc] initWithItemName:@"No more items!"];
+//    tmpItems = item
+    if (indexPath.row < self.items.count) {
+//        GJItem *item = items[indexPath.row];
+        cell.textLabel.text = [self.items[indexPath.row] description];
     }else{
         cell.textLabel.text = @"No more items!";
     }

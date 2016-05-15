@@ -19,7 +19,7 @@
 
 //指定初始化方法
 - (instancetype) initWithItemName:(NSString *)name serialNumber:(NSString *) sNumber valueInDollars:(int) value;
-- (instancetype) initWIthItemName:(NSString *)name;
+- (instancetype) initWithItemName:(NSString *)name;
 - (instancetype) init;
 
 - (void) setItemName:(NSString *) str;
