@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB2879CD1CEA0F5700B6F5E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2879CC1CEA0F5700B6F5E1 /* main.m */; };
+		FB2879D01CEA0F5700B6F5E1 /* GJAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2879CF1CEA0F5700B6F5E1 /* GJAppDelegate.m */; };
+		FB2879D31CEA0F5700B6F5E1 /* GJDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2879D21CEA0F5700B6F5E1 /* GJDrawViewController.m */; };
+		FB2879D81CEA0F5700B6F5E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB2879D71CEA0F5700B6F5E1 /* Assets.xcassets */; };
+		FB2879E41CEA0F9100B6F5E1 /* GJLine.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2879E31CEA0F9100B6F5E1 /* GJLine.m */; };
+		FB2879E71CEA116600B6F5E1 /* GJDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2879E61CEA116600B6F5E1 /* GJDrawView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FB2879C81CEA0F5700B6F5E1 /* GJTouchTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GJTouchTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB2879CC1CEA0F5700B6F5E1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FB2879CE1CEA0F5700B6F5E1 /* GJAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJAppDelegate.h; sourceTree = "<group>"; };
+		FB2879CF1CEA0F5700B6F5E1 /* GJAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJAppDelegate.m; sourceTree = "<group>"; };
+		FB2879D11CEA0F5700B6F5E1 /* GJDrawViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GJDrawViewController.h; sourceTree = "<group>"; };
+		FB2879D21CEA0F5700B6F5E1 /* GJDrawViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJDrawViewController.m; sourceTree = "<group>"; };
+		FB2879D71CEA0F5700B6F5E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB2879DC1CEA0F5700B6F5E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB2879E21CEA0F9100B6F5E1 /* GJLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJLine.h; sourceTree = "<group>"; };
+		FB2879E31CEA0F9100B6F5E1 /* GJLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJLine.m; sourceTree = "<group>"; };
+		FB2879E51CEA116600B6F5E1 /* GJDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJDrawView.h; sourceTree = "<group>"; };
+		FB2879E61CEA116600B6F5E1 /* GJDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJDrawView.m; sourceTree = "<group>"; };
+		FB2879E81CEA17A300B6F5E1 /* GJTouchTracker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GJTouchTracker-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB2879C51CEA0F5700B6F5E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FB2879BF1CEA0F5700B6F5E1 = {
+			isa = PBXGroup;
+			children = (
+				FB2879CA1CEA0F5700B6F5E1 /* GJTouchTracker */,
+				FB2879C91CEA0F5700B6F5E1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FB2879C91CEA0F5700B6F5E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB2879C81CEA0F5700B6F5E1 /* GJTouchTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB2879CA1CEA0F5700B6F5E1 /* GJTouchTracker */ = {
+			isa = PBXGroup;
+			children = (
+				FB2879CE1CEA0F5700B6F5E1 /* GJAppDelegate.h */,
+				FB2879CF1CEA0F5700B6F5E1 /* GJAppDelegate.m */,
+				FB2879D11CEA0F5700B6F5E1 /* GJDrawViewController.h */,
+				FB2879D21CEA0F5700B6F5E1 /* GJDrawViewController.m */,
+				FB2879E21CEA0F9100B6F5E1 /* GJLine.h */,
+				FB2879E31CEA0F9100B6F5E1 /* GJLine.m */,
+				FB2879E51CEA116600B6F5E1 /* GJDrawView.h */,
+				FB2879E61CEA116600B6F5E1 /* GJDrawView.m */,
+				FB2879D71CEA0F5700B6F5E1 /* Assets.xcassets */,
+				FB2879DC1CEA0F5700B6F5E1 /* Info.plist */,
+				FB2879CB1CEA0F5700B6F5E1 /* Supporting Files */,
+			);
+			path = GJTouchTracker;
+			sourceTree = "<group>";
+		};
+		FB2879CB1CEA0F5700B6F5E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FB2879CC1CEA0F5700B6F5E1 /* main.m */,
+				FB2879E81CEA17A300B6F5E1 /* GJTouchTracker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB2879C71CEA0F5700B6F5E1 /* GJTouchTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB2879DF1CEA0F5700B6F5E1 /* Build configuration list for PBXNativeTarget "GJTouchTracker" */;
+			buildPhases = (
+				FB2879C41CEA0F5700B6F5E1 /* Sources */,
+				FB2879C51CEA0F5700B6F5E1 /* Frameworks */,
+				FB2879C61CEA0F5700B6F5E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GJTouchTracker;
+			productName = GJTouchTracker;
+			productReference = FB2879C81CEA0F5700B6F5E1 /* GJTouchTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB2879C01CEA0F5700B6F5E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = gj;
+				TargetAttributes = {
+					FB2879C71CEA0F5700B6F5E1 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 74LUC972NK;
+					};
+				};
+			};
+			buildConfigurationList = FB2879C31CEA0F5700B6F5E1 /* Build configuration list for PBXProject "GJTouchTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB2879BF1CEA0F5700B6F5E1;
+			productRefGroup = FB2879C91CEA0F5700B6F5E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB2879C71CEA0F5700B6F5E1 /* GJTouchTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB2879C61CEA0F5700B6F5E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2879D81CEA0F5700B6F5E1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB2879C41CEA0F5700B6F5E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB2879E71CEA116600B6F5E1 /* GJDrawView.m in Sources */,
+				FB2879E41CEA0F9100B6F5E1 /* GJLine.m in Sources */,
+				FB2879D31CEA0F5700B6F5E1 /* GJDrawViewController.m in Sources */,
+				FB2879D01CEA0F5700B6F5E1 /* GJAppDelegate.m in Sources */,
+				FB2879CD1CEA0F5700B6F5E1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FB2879DD1CEA0F5700B6F5E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FB2879DE1CEA0F5700B6F5E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB2879E01CEA0F5700B6F5E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GJTouchTracker/GJTouchTracker-Prefix.pch";
+				INFOPLIST_FILE = GJTouchTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gj.GJTouchTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FB2879E11CEA0F5700B6F5E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GJTouchTracker/GJTouchTracker-Prefix.pch";
+				INFOPLIST_FILE = GJTouchTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gj.GJTouchTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB2879C31CEA0F5700B6F5E1 /* Build configuration list for PBXProject "GJTouchTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2879DD1CEA0F5700B6F5E1 /* Debug */,
+				FB2879DE1CEA0F5700B6F5E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB2879DF1CEA0F5700B6F5E1 /* Build configuration list for PBXNativeTarget "GJTouchTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB2879E01CEA0F5700B6F5E1 /* Debug */,
+				FB2879E11CEA0F5700B6F5E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB2879C01CEA0F5700B6F5E1 /* Project object */;
+}
