@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FB0811F61CCFAB000061D8BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB0811F51CCFAB000061D8BE /* Images.xcassets */; };
+		FBA541181C3EB7C6008A3D48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA541171C3EB7C6008A3D48 /* main.m */; };
+		FBA5411B1C3EB7C6008A3D48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA5411A1C3EB7C6008A3D48 /* AppDelegate.m */; };
+		FBA5411E1C3EB7C6008A3D48 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA5411D1C3EB7C6008A3D48 /* ViewController.m */; };
+		FBA541311C3EB7C6008A3D48 /* GJQuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA541301C3EB7C6008A3D48 /* GJQuizTests.m */; };
+		FBA5413E1C3EB8AF008A3D48 /* GJQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBA5413C1C3EB8AF008A3D48 /* GJQuizViewController.m */; };
+		FBA5413F1C3EB8AF008A3D48 /* GJQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBA5413D1C3EB8AF008A3D48 /* GJQuizViewController.xib */; };
+		FBA541411C3EC46F008A3D48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBA541401C3EC46F008A3D48 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBA5412D1C3EB7C6008A3D48 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBA5410B1C3EB7C6008A3D48 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA541121C3EB7C6008A3D48;
+			remoteInfo = GJQuiz;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FB0811F51CCFAB000061D8BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FBA541131C3EB7C6008A3D48 /* GJQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GJQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA541171C3EB7C6008A3D48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FBA541191C3EB7C6008A3D48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FBA5411A1C3EB7C6008A3D48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FBA5411C1C3EB7C6008A3D48 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		FBA5411D1C3EB7C6008A3D48 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		FBA541271C3EB7C6008A3D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA5412C1C3EB7C6008A3D48 /* GJQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GJQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBA541301C3EB7C6008A3D48 /* GJQuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GJQuizTests.m; sourceTree = "<group>"; };
+		FBA541321C3EB7C6008A3D48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBA5413B1C3EB8AF008A3D48 /* GJQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GJQuizViewController.h; sourceTree = SOURCE_ROOT; };
+		FBA5413C1C3EB8AF008A3D48 /* GJQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GJQuizViewController.m; sourceTree = SOURCE_ROOT; };
+		FBA5413D1C3EB8AF008A3D48 /* GJQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GJQuizViewController.xib; sourceTree = SOURCE_ROOT; };
+		FBA541401C3EC46F008A3D48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FBA541101C3EB7C6008A3D48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA541291C3EB7C6008A3D48 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FBA5410A1C3EB7C6008A3D48 = {
+			isa = PBXGroup;
+			children = (
+				FBA541151C3EB7C6008A3D48 /* GJQuiz */,
+				FBA5412F1C3EB7C6008A3D48 /* GJQuizTests */,
+				FBA541141C3EB7C6008A3D48 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FBA541141C3EB7C6008A3D48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBA541131C3EB7C6008A3D48 /* GJQuiz.app */,
+				FBA5412C1C3EB7C6008A3D48 /* GJQuizTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBA541151C3EB7C6008A3D48 /* GJQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				FBA541401C3EC46F008A3D48 /* Assets.xcassets */,
+				FBA5413B1C3EB8AF008A3D48 /* GJQuizViewController.h */,
+				FBA5413C1C3EB8AF008A3D48 /* GJQuizViewController.m */,
+				FBA5413D1C3EB8AF008A3D48 /* GJQuizViewController.xib */,
+				FBA541191C3EB7C6008A3D48 /* AppDelegate.h */,
+				FBA5411A1C3EB7C6008A3D48 /* AppDelegate.m */,
+				FBA5411C1C3EB7C6008A3D48 /* ViewController.h */,
+				FBA5411D1C3EB7C6008A3D48 /* ViewController.m */,
+				FBA541271C3EB7C6008A3D48 /* Info.plist */,
+				FB0811F51CCFAB000061D8BE /* Images.xcassets */,
+				FBA541161C3EB7C6008A3D48 /* Supporting Files */,
+			);
+			path = GJQuiz;
+			sourceTree = "<group>";
+		};
+		FBA541161C3EB7C6008A3D48 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FBA541171C3EB7C6008A3D48 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FBA5412F1C3EB7C6008A3D48 /* GJQuizTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBA541301C3EB7C6008A3D48 /* GJQuizTests.m */,
+				FBA541321C3EB7C6008A3D48 /* Info.plist */,
+			);
+			path = GJQuizTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FBA541121C3EB7C6008A3D48 /* GJQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA541351C3EB7C6008A3D48 /* Build configuration list for PBXNativeTarget "GJQuiz" */;
+			buildPhases = (
+				FBA5410F1C3EB7C6008A3D48 /* Sources */,
+				FBA541101C3EB7C6008A3D48 /* Frameworks */,
+				FBA541111C3EB7C6008A3D48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GJQuiz;
+			productName = GJQuiz;
+			productReference = FBA541131C3EB7C6008A3D48 /* GJQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FBA5412B1C3EB7C6008A3D48 /* GJQuizTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBA541381C3EB7C6008A3D48 /* Build configuration list for PBXNativeTarget "GJQuizTests" */;
+			buildPhases = (
+				FBA541281C3EB7C6008A3D48 /* Sources */,
+				FBA541291C3EB7C6008A3D48 /* Frameworks */,
+				FBA5412A1C3EB7C6008A3D48 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FBA5412E1C3EB7C6008A3D48 /* PBXTargetDependency */,
+			);
+			name = GJQuizTests;
+			productName = GJQuizTests;
+			productReference = FBA5412C1C3EB7C6008A3D48 /* GJQuizTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FBA5410B1C3EB7C6008A3D48 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = gj;
+				TargetAttributes = {
+					FBA541121C3EB7C6008A3D48 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 74LUC972NK;
+					};
+					FBA5412B1C3EB7C6008A3D48 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FBA541121C3EB7C6008A3D48;
+					};
+				};
+			};
+			buildConfigurationList = FBA5410E1C3EB7C6008A3D48 /* Build configuration list for PBXProject "GJQuiz" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FBA5410A1C3EB7C6008A3D48;
+			productRefGroup = FBA541141C3EB7C6008A3D48 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBA541121C3EB7C6008A3D48 /* GJQuiz */,
+				FBA5412B1C3EB7C6008A3D48 /* GJQuizTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FBA541111C3EB7C6008A3D48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB0811F61CCFAB000061D8BE /* Images.xcassets in Resources */,
+				FBA541411C3EC46F008A3D48 /* Assets.xcassets in Resources */,
+				FBA5413F1C3EB8AF008A3D48 /* GJQuizViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA5412A1C3EB7C6008A3D48 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FBA5410F1C3EB7C6008A3D48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA5411E1C3EB7C6008A3D48 /* ViewController.m in Sources */,
+				FBA5411B1C3EB7C6008A3D48 /* AppDelegate.m in Sources */,
+				FBA5413E1C3EB8AF008A3D48 /* GJQuizViewController.m in Sources */,
+				FBA541181C3EB7C6008A3D48 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FBA541281C3EB7C6008A3D48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBA541311C3EB7C6008A3D48 /* GJQuizTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FBA5412E1C3EB7C6008A3D48 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FBA541121C3EB7C6008A3D48 /* GJQuiz */;
+			targetProxy = FBA5412D1C3EB7C6008A3D48 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		FBA541331C3EB7C6008A3D48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FBA541341C3EB7C6008A3D48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FBA541361C3EB7C6008A3D48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = GJQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gj.GJQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		FBA541371C3EB7C6008A3D48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = GJQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gj.GJQuiz;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		FBA541391C3EB7C6008A3D48 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GJQuizTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gj.GJQuizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GJQuiz.app/GJQuiz";
+			};
+			name = Debug;
+		};
+		FBA5413A1C3EB7C6008A3D48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GJQuizTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gj.GJQuizTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GJQuiz.app/GJQuiz";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FBA5410E1C3EB7C6008A3D48 /* Build configuration list for PBXProject "GJQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA541331C3EB7C6008A3D48 /* Debug */,
+				FBA541341C3EB7C6008A3D48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA541351C3EB7C6008A3D48 /* Build configuration list for PBXNativeTarget "GJQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA541361C3EB7C6008A3D48 /* Debug */,
+				FBA541371C3EB7C6008A3D48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FBA541381C3EB7C6008A3D48 /* Build configuration list for PBXNativeTarget "GJQuizTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBA541391C3EB7C6008A3D48 /* Debug */,
+				FBA5413A1C3EB7C6008A3D48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FBA5410B1C3EB7C6008A3D48 /* Project object */;
+}
